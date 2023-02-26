@@ -36,7 +36,7 @@ prendere spunto dallo screenshot fornito in consegna.
 
 
 
-//- Creo un ciclo impostando alla variabile "i" il valore di 1,
+/* //- Creo un ciclo impostando alla variabile "i" il valore di 1,
 //che termini una volta che il contatore giunge al numero uguale a 100
 for (let i = 1; i <= 100; i++) {
 
@@ -58,6 +58,24 @@ for (let i = 1; i <= 100; i++) {
         //! ALTRIMENTI stampa il valore di "i".  
     } else {
         console.log(i);
+    }
+
+} */
+
+let cellsContainerEl = document.getElementById('cells-container');
+
+for (let i = 1; i <= 100; i++) {
+
+    let newDivEl = document.createElement('div');
+    cellsContainerEl.append(newDivEl);
+    newDivEl.innerHTML = i;
+
+    if (i % 3 === 0 && i % 5 === 0) {
+        newDivEl.innerHTML = "FizzBuzz";
+    } else if (i % 3 === 0) {
+        newDivEl.innerHTML = "Fizz";
+    } else if (i % 5 === 0) {
+        newDivEl.innerHTML = "Buzz";
     }
 
 }
