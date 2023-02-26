@@ -76,6 +76,8 @@ for (let i = 1; i <= 100; i++) {
         newDivEl.innerHTML = "Fizz";
     } else if (i % 5 === 0) {
         newDivEl.innerHTML = "Buzz";
+    } else {
+        newDivEl.innerHTML = i;
     }
 
 }
