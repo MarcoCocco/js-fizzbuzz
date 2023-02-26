@@ -72,12 +72,20 @@ for (let i = 1; i <= 100; i++) {
 
     if (i % 3 === 0 && i % 5 === 0) {
         newDivEl.innerHTML = "FizzBuzz";
+        newDivEl.style.color = "white";
+        newDivEl.style.backgroundColor = "red";
+        newDivEl.style.fontSize = "30px";
     } else if (i % 3 === 0) {
         newDivEl.innerHTML = "Fizz";
+        newDivEl.style.backgroundColor = "yellow";
+        newDivEl.style.fontSize = "25px";
     } else if (i % 5 === 0) {
         newDivEl.innerHTML = "Buzz";
+        newDivEl.style.backgroundColor = "orange";
+        newDivEl.style.fontSize = "25px";
     } else {
         newDivEl.innerHTML = i;
+        newDivEl.style.fontSize = "25px";
     }
 
 }
